@@ -14,7 +14,7 @@ export class PostsComponent implements OnInit {
   constructor(private postService:PostService) { }
 
   ngOnInit(): void {
-    this.postService.getPosts().subscribe(value => this.posts=value)
+    this.postService.getAll().subscribe(value => this.posts=value)
   }
 
 }

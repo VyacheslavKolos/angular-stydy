@@ -12,7 +12,7 @@ export class PostService {
 
   constructor(private http:HttpClient) { }
 
-  getPosts():Observable<IPost[]>{
+  getAll():Observable<IPost[]>{
     return this.http.get<any[]>(this.urlPosts);
   }
 }

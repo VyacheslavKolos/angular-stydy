@@ -14,7 +14,7 @@ export class CommentsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.commentService.getComments().subscribe(value => this.comments = value);
+    this.commentService.getAll().subscribe(value => this.comments = value);
   }
 
 }

@@ -12,7 +12,7 @@ export class CommentService {
 
   constructor(private http:HttpClient) { }
 
-  getComments():Observable<IComment[]>{
+  getAll():Observable<IComment[]>{
     return this.http.get<any[]>(this.urlComments)
   }
 }
