@@ -1,1 +1,6 @@
-<p>comment works!</p>
+<h4>
+  Comment id {{commentObj.id}} -
+</h4>
+<p>Comment name : {{commentObj.name}} -</p>
+<a [routerLink]="['comment-details', commentObj.id]">details</a>
+<hr>

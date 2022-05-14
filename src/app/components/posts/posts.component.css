@@ -1,0 +1,15 @@
+.AllPosts {
+  width: 50%;
+  background-color: cornflowerblue;
+}
+
+.Posts {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  background-color: antiquewhite;
+}
+.posts-outlet{
+  max-width: 50%;
+  background-color: coral;
+}

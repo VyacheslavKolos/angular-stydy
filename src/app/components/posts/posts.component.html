@@ -1,1 +1,12 @@
-<p>posts works!</p>
+<div class="Posts">
+  <div class="AllPosts">
+    <app-post *ngFor="let p of posts" [post]="p"></app-post>
+    <hr>
+  </div>
+
+  <div class="posts-outlet">
+    <router-outlet>
+
+    </router-outlet>
+  </div>
+</div>
