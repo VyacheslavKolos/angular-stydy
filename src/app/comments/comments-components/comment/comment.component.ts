@@ -9,9 +9,10 @@ import {IComment} from "../../../interfaces";
 export class CommentComponent implements OnInit {
 
   @Input()
-  commentObj:IComment;
+  commentObj: IComment;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

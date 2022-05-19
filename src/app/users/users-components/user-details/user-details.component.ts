@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {IUserDetails} from "../../../interfaces";
 import {ActivatedRoute} from "@angular/router";
+
+import {IUserDetails} from "../../../interfaces";
 
 @Component({
   selector: 'app-user-details',
@@ -16,7 +17,7 @@ export class UserDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(value => {
+    this.activatedRoute.params.subscribe(() => {
       let {state:{data}}=history;
       this.userDetailsObj=data as IUserDetails;
     })

@@ -10,13 +10,13 @@ import {IComment} from "../../../interfaces";
 })
 export class CommentsComponent implements OnInit {
 
-  comments:IComment[];
+  comments: IComment[];
 
   constructor(private commentService: CommentService) {
   }
 
   ngOnInit(): void {
-    this.commentService.getAll().subscribe(value => this.comments=value)
+    this.commentService.getAll().subscribe(value => this.comments = value)
   }
 
 }
