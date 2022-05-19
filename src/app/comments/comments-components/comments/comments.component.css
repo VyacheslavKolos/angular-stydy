@@ -1,0 +1,15 @@
+.AllComments {
+  width: 50%;
+  background-color: cornflowerblue;
+}
+
+.Comments {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  background-color: antiquewhite;
+}
+.comments-outlet{
+  max-width: 50%;
+  background-color: coral;
+}

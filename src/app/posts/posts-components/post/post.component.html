@@ -1,0 +1,6 @@
+<h4>
+  Post id: {{post.id}}
+</h4>
+<p>title : {{post.title}}</p>
+<a [routerLink]="[post.id]" [state]="{data:post}" >details</a>
+<hr>

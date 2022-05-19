@@ -1,0 +1,7 @@
+<p>
+  {{user.id}} -
+  {{user.name}}
+  <!--  <a routerLink="user-details/{{user.id}}">details</a>-->
+
+  <a [routerLink]="[user.id]" [state]="{data:user}">details</a>
+</p>

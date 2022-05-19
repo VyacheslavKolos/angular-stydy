@@ -1,1 +1,12 @@
-<p>comments works!</p>
+<div class="Comments">
+  <div class="AllComments">
+    <app-comment *ngFor="let com of comments" [commentObj]="com"></app-comment>
+    <hr>
+  </div>
+
+  <div class="comments-outlet">
+    <router-outlet>
+
+    </router-outlet>
+  </div>
+</div>

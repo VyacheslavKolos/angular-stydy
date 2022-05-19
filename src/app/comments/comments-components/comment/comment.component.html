@@ -1,0 +1,6 @@
+<h4>
+  Comment id {{commentObj.id}} -
+</h4>
+<p>Comment name : {{commentObj.name}} -</p>
+<a [routerLink]="[commentObj.id]" [state]="{data:commentObj}">details</a>
+<hr>
