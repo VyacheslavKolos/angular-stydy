@@ -1,0 +1,9 @@
+.mainWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 24px;
+  background-color: coral;
+}
+
