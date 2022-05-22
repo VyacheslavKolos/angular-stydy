@@ -5,9 +5,9 @@ import {HomeComponent} from "./app-components/home/home.component";
 
 let routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule)},
-  {path: 'posts', loadChildren: () => import('./posts/posts.module').then(m => m.PostsModule)},
-  {path: 'comments', loadChildren: () => import('./comments/comments.module').then(m => m.CommentsModule)}
+  {path: 'users', loadChildren: () => import('./modules/user/users.module').then(m => m.UsersModule)},
+  {path: 'posts', loadChildren: () => import('./modules/post/posts.module').then(m => m.PostsModule)},
+  {path: 'comments', loadChildren: () => import('./modules/comment/comments.module').then(m => m.CommentsModule)}
 ]
 
 @NgModule({
