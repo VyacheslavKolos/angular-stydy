@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {IToken, IUser} from "../interfaces";
-import {Observable} from "rxjs";
+import {Observable, tap} from "rxjs";
 import {urls} from "../constants";
 
 @Injectable({
@@ -25,8 +25,12 @@ export class AuthService {
   }
 
   refresh(): Observable<IToken> {
-    const refresh= this.getRefreshToken();
-    return this.httpClient.post<IToken>(`${urls.auth}/refresh`, {refresh})
+    const refresh = this.getRefreshToken();
+    return this.httpClient.post<IToken>(`${urls.auth}/refresh`, {refresh}).pipe(
+      tap((tokens: IToken) => {
+        this.setToken(tokens);
+      })
+    )
   }
 
 
