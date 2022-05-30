@@ -1,3 +1,3 @@
-<h4 *ngIf="user"> {{user.id}} -> {{user.name}}</h4>
-<app-users (userEmitt)="catch($event)"></app-users>
+<h4 *ngIf="user.id!=='0'"> {{user.id}} -> {{user.name}}</h4>
+<app-users></app-users>
 

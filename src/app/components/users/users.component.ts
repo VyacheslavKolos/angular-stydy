@@ -11,8 +11,7 @@ import {IUser} from "../../interfaces";
 export class UsersComponent implements OnInit {
 
   users:IUser[];
-  @Output()
-  userEmitt=new EventEmitter<IUser>();
+
 
   constructor(private userService:UserService) { }
 
@@ -20,8 +19,6 @@ export class UsersComponent implements OnInit {
     this.userService.getAll().subscribe(value => this.users=value )
   }
 
-  catchUserEmit(userCatch:IUser):void{
-    this.userEmitt.emit(userCatch)
-  }
+
 
 }
